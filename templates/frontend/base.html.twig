@@ -5,11 +5,11 @@
         <title>{% block title %}Welcome!{% endblock %}</title>
 
         {% block stylesheets %}
-            {{ encore_entry_link_tags('frontend') }}
+            {{ encore_entry_link_tags('app', null, 'frontend') }}
         {% endblock %}
 
         {% block javascripts %}
-            {{ encore_entry_link_tags('frontend') }}
+            {{ encore_entry_link_tags('app', null, 'frontend') }}
         {% endblock %}
     </head>
     <body>

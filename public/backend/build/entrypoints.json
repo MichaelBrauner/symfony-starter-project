@@ -1,0 +1,14 @@
+{
+  "entrypoints": {
+    "app": {
+      "js": [
+        "/backend/build/runtime.js",
+        "/backend/build/vendors-node_modules_symfony_stimulus-bridge_dist_index_js-node_modules_core-js_modules_es_ob-7db861.js",
+        "/backend/build/app.js"
+      ],
+      "css": [
+        "/backend/build/app.css"
+      ]
+    }
+  }
+}
