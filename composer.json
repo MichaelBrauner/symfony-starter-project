@@ -1,6 +1,6 @@
 {
     "type": "project",
-    "name": "mb/symfony-starter",
+    "name": "michael-brauner/symfony-starter",
     "description": "A starter project for symfony applications.",
     "license": "proprietary",
     "minimum-stability": "stable",
