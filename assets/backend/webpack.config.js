@@ -1,19 +1,15 @@
-const Encore = require("@symfony/webpack-encore");
-const path = require("path");
-
 module.exports = {
     get(Encore) {
         const path = require('path');
 
-        Encore
-            .setOutputPath('public/frontend/build/')
-            .setPublicPath('/frontend/build')
+        Encore.setOutputPath('./public/backend/build/')
+            .setPublicPath('/backend/build')
             .enablePostCssLoader((options) => {
                 options.postcssOptions = {
-                    config: path.resolve(__dirname, 'postcss-frontend.config.js')
+                    config: path.resolve(__dirname, 'postcss.config.js')
                 }
             })
-            .addEntry('app', './assets/frontend/app.js')
+            .addEntry('app', './assets/backend/app.js')
             .enableStimulusBridge('./assets/controllers.json')
             .splitEntryChunks()
             .enableSingleRuntimeChunk()

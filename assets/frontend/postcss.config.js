@@ -2,7 +2,7 @@ module.exports = {
     plugins: [
         require('postcss-import'),
         require('tailwindcss/nesting'),
-        require('tailwindcss')({config: './webpack/tailwind-backend.config.js'}),
+        require('tailwindcss')({config: './assets/frontend/tailwind.config.js'}),
         require('autoprefixer'),
     ]
 }
