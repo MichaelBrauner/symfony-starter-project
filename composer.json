@@ -1,5 +1,7 @@
 {
     "type": "project",
+    "name": "bs/symfony-starter",
+    "description": "A starter project for symfony applications.",
     "license": "proprietary",
     "minimum-stability": "stable",
     "prefer-stable": true,
