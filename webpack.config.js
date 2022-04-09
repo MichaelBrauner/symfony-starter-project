@@ -16,5 +16,18 @@ Encore.reset();
 frontendConfig.get(Encore)
 const frontend = Encore.getWebpackConfig();
 backend.name = 'frontend';
+Encore.reset();
 
-module.exports = [backend, frontend];
+Encore
+    .setOutputPath('public/build/')
+    .setPublicPath('/build')
+    .copyFiles({
+        from: './assets/images',
+        to: 'images/[path][name].[ext]',
+    })
+    .enableSingleRuntimeChunk()
+;
+
+const general = Encore.getWebpackConfig()
+
+module.exports = [backend, frontend, general];
