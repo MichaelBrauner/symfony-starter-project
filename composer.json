@@ -2,7 +2,7 @@
     "type": "project",
     "name": "mbrauner/symfony-starter",
     "description": "A starter project for symfony applications.",
-    "license": "proprietary",
+    "license": "MIT",
     "minimum-stability": "stable",
     "prefer-stable": true,
     "require": {
