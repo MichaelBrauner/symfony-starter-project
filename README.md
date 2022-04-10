@@ -12,7 +12,7 @@ this is a general purpose starting point for pretty much every symfony project c
 # Installation
 
 ````shell
-composer create-project michael-brauner/symfony-starter my_project_folder
+composer create-project mbrauner/symfony-starter
 cd my_project_folder 
 cp .env .env.local
 composer install
